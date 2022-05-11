@@ -11,17 +11,20 @@ resource "random_shuffle" "zone" {
 resource "google_compute_instance" "instance01" {
   name         = var.instance_name
   machine_type = "f1-micro"
-  zone         = random_shuffle.zone.result
+  zone         = random_shuffle.zone.result.0
 
   boot_disk {
     initialize_params {
-      image = "debian-cloud/debian-9"
+      image = "centos-cloud/centos-7"
     }
   }
 
   network_interface {
+    #maybe you dont have a default network on your projet.
+    #in this case use for example instead: subnet_name  = "projects/MYPROJECT/regions/MYREGION/subnetworks/MYSUBNETNAME"
     network = "default"
 
+    #remove that if you don't want public IP for your instance
     access_config {
       // Ephemeral public IP
     }
