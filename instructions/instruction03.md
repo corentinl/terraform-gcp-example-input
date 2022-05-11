@@ -29,7 +29,7 @@ variable "instance_name" {
   //check documentation to set attributes (type, description and default)
 }
 
-variable "availability_zone_names" {
+variable "zone_name" {
   //check documentation to set attributes (type, description and default)
 }
 ```
@@ -65,7 +65,7 @@ terraform init
 
 ### Plan
 ```bash
-terraform plan -out theplan   
+terraform plan -out theplan -var-file myvar.tfvars   
 ```
 Verify that 2 resources will be provisioned only
 
