@@ -39,8 +39,8 @@ Complete this configuration appropriately.
 
 Open myvar.tfvars (or create it if non existent) in your text editor, and write the 2 required variables values
 ```hcl
-instance_name = "writeYouInstanceNameHere"
-zone_name = "europ"
+instance_name = "writeYourInstanceNameHere"
+zone_name = "writeYourZoneHere"
 
 
 ```
