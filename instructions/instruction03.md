@@ -25,11 +25,11 @@ The Terraform documentation on input variables is the following:
 
 Open variables.tf (or create it if non existent) in your text editor, and write the 2 required variables
 ```hcl
-output "instance_name" {
+variable "instance_name" {
   //check documentation to set attributes (type, description and default)
 }
 
-output "availability_zone_names" {
+variable "availability_zone_names" {
   //check documentation to set attributes (type, description and default)
 }
 ```
