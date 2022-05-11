@@ -1,6 +1,6 @@
-# Terraform basic example #2<br>Terraform output on Google Cloud Platform  
+# Terraform basic example #3<br>Terraform input on Google Cloud Platform  
 
-*refer to [tutorials/terraform/outputs](https://learn.hashicorp.com/tutorials/terraform/outputs)*
+*refer to [tutorials/terraform/input](https://www.terraform.io/language/values/variables)*
 
 ## Execution environment
 
@@ -36,5 +36,5 @@ Within `provider.tf` replace the following placeholder with your GCP project ID 
 
 ## Lab instructions
 
-Follow instructions in instructions folder of this repository [instruction02.md](https://github.com/corentinl/terraform-gcp-example-output-/blob/main/instructions/instruction02.md)
+Follow instructions in instructions folder of this repository [instruction02.md](https://github.com/corentinl/terraform-gcp-example-input-/blob/main/instructions/instruction03.md)
 
