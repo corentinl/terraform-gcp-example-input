@@ -73,7 +73,7 @@ Verify that 2 resources will be provisioned only
 ### Apply  
 When satisfy with the plan run the apply command
 ```bash
-terraform apply theplan --var-file myvar.tfvars
+terraform apply theplan
 ```
 
 Check that your instance is well provisioned according to the input you've defined.
