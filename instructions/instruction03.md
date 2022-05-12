@@ -12,7 +12,7 @@ The examples we work on so far have used hard-coded values. For this exercise we
 
 We have the folowing objectives for this example
 - Define the instance name with variables
-- Define the zone list to use with the instance also with a variable.
+- Define the zone to use with the instance also with a variable.
 - Leverage the variable definition files (.tfvars )
 
 
@@ -77,9 +77,6 @@ terraform apply theplan
 ```
 
 Check that your instance is well provisioned according to the input you've defined.
-
-# Extra optional Step
-make you "zone_names" variable a list and when using this variable with the compute_instance resource choose randomly a zone from the list
 
 ### Destroy (Optional)   
 To get rid of all previously provisioned resources run
