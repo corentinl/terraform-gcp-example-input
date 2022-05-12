@@ -10,10 +10,7 @@ variable "instance_name" {
 }
 
 variable "zone_name" {
-  type        = list(string)
-  description = "the list of zone we want the instance in"
-  default = [
-    "europe-west1-b",
-    "europe-west1-c",
-  ]
+  type        = string
+  description = "the zone we want the instance in"
+  default = "europe-west1-b"
 }
