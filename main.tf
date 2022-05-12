@@ -3,15 +3,10 @@ resource "google_service_account" "sa-demo01" {
   display_name = "Service Account pour test de demo"
 }
 
-resource "random_shuffle" "zone" {
-  input        = var.zone_name
-  result_count = 1
-}
-
 resource "google_compute_instance" "instance01" {
   name         = var.instance_name
   machine_type = "f1-micro"
-  zone         = random_shuffle.zone.result.0
+  zone         = var.zone_name
 
   boot_disk {
     initialize_params {
